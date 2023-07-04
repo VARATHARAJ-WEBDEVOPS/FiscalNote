@@ -9,6 +9,7 @@
   <mat-sidenav-container>
     <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
       <img
+            alt="avatarimg"
         class="avatar mat-elevation-z8"
         src="assets/avathor.png"
       />
@@ -60,7 +61,7 @@
             <div class="content2 mat-elevation-z8" >
               <form [formGroup]="employeeFormGroup">
                 <table mat-table [dataSource]="this.service.dataSource" class="mat-elevation-z8">
-                 
+                  <caption>dataset</caption>
                   <!-- Name Column -->
                   <ng-container matColumnDef="Persolnal Detail">
                     <th mat-header-cell *matHeaderCellDef style="text-align: center; "> Persolnal Detail </th>  
