@@ -16,7 +16,7 @@ export class CreateFormComponent implements OnInit {
 
   Email: any;
   balref  : any ;
-  displayedColumns: string[] = ['Persolnal Detail', 'Date','Due Date', 'Amount','Interest', 'Actions'];   //Table colums Assigned
+  displayedColumns: string[] = ['Persolnal Detail', 'Date','Due Date', 'Amount','Interest', 'Actions'];  
   reloadFlag = localStorage.getItem('reloadFlag');
 
   containerRef!: ViewContainerRef;
@@ -60,7 +60,7 @@ export class CreateFormComponent implements OnInit {
       Swal.fire('UnAutharized User', '', 'warning')
       this.router.navigateByUrl('/');
     }
-    this.Email = localStorage.getItem('email');      //Get user Mail id from Login page using user service
+    this.Email = localStorage.getItem('email');     
    
   }  
   printx(){
@@ -90,7 +90,7 @@ export class CreateFormComponent implements OnInit {
     this.employeeFormGroup.value.balance = balfix ;
   }
   
-  saveAction() : void{                              //Save and update Function.
+  saveAction() : void{                            
    
     if (!this.employeeFormGroup.valid ) {
       Swal.fire('Please Check All the Fields are Filled!', '', 'warning')
