@@ -54,19 +54,19 @@ totalfinalamt: number =0;
  console.log("searchDocument", res) 
    this.employees = res['rows'].map((row: any) => row['doc']);
    this.dataSource = new MatTableDataSource(this.employees)
-   for (let i = 0; i < this.dataSource.data.length; i++) {         //Calculating Total Amount
+   for (let i = 0; i < this.dataSource.data.length; i++) {        
     this.totalAmount += parseInt(this.dataSource.data[i].amount);
   }
 
-  for (let i = 0; i < this.dataSource.data.length; i++) {         //Calculating Total Amount
+  for (let i = 0; i < this.dataSource.data.length; i++) {         
     this.totalprofit += parseInt(this.dataSource.data[i].profit);
   }
 
-  for (let i = 0; i < this.dataSource.data.length; i++) {         //Calculating Total Amount
+  for (let i = 0; i < this.dataSource.data.length; i++) {      
     this.totalBalance += parseInt(this.dataSource.data[i].balance);
   }
 
-  for (let i = 0; i < this.dataSource.data.length; i++) {         //Calculating Total Amount
+  for (let i = 0; i < this.dataSource.data.length; i++) {         
     this.totalfinalamt += parseInt(this.dataSource.data[i].finalamt);
   }
 
