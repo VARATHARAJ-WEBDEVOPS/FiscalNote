@@ -38,7 +38,7 @@ export class CreateFormComponent implements OnInit {
       '_id': [],
       '_rev': [],
       'employee_name': ['',[Validators.required, Validators.pattern('^[a-zA-Z]+$')]],
-      'phone':['',[Validators.required, Validators.pattern(/^[0-9]{10,10}$/)]],      
+      'phone':['',[Validators.required, Validators.pattern(/^[0-9]{10}$/)]],      
       'date': ['',Validators.required],
       'address': ['',Validators.required],
       'duedate': ['', [Validators.required, Validators.pattern(/^\d+$/)]],
