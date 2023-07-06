@@ -3,8 +3,7 @@ import { MatSidenav } from '@angular/material/sidenav';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ServiceService } from 'src/app/service/service.service';
 import Swal from 'sweetalert2';
-import {  Data, Router } from '@angular/router';
-import { switchAll } from 'rxjs';
+import {  Router } from '@angular/router';
 
 @Component({
   selector: 'app-create-form',
