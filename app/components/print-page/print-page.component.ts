@@ -10,15 +10,17 @@ import { ServiceService } from 'src/app/service/service.service';
 export class PrintPageComponent implements OnInit {
 
   today = new Date();
-  constructor(public service:ServiceService ,private router: Router) { }
+
+  constructor(public service: ServiceService, private router: Router) { }
 
   ngOnInit(): void {
     this.fetchAction();
   }
-  fetchAction() :void{
-    this.service.searchDocument('object_name:staff_name').then( () =>{
-    window.print();
+
+  fetchAction(): void {
+    this.service.searchDocument('object_name:staff_name').then(() => {
+      window.print();
       this.router.navigateByUrl('Dashboard');
-    })
+    });
   }
 }
