@@ -1,83 +1,81 @@
-
-.formContainer h1{
-  font-family:  sans-serif;
+.formContainer h1 {
+  font-family: sans-serif;
   font-weight: bold;
   color: #fff;
   margin-bottom: 25px;
 }
+
 mat-toolbar {
-    background: #004a9f;
-    color: white;
-  }
-  
-  mat-sidenav {
-    margin: 16px;
-    width: 200px;
-    border-right: none;
-    background: #002b5c;
-    color: white;
-    border-radius: 10px;
-    padding: 16px;
-    text-align: center;
-  }
-  
-  .content {
-    height: calc(100vh - 130px);
-    border-radius: 10px;
-    margin: 16px;
-    margin-left: 32px;  
-    padding: 16px;  
-    overflow: auto;
-  }
+  background: #004a9f;
+  color: white;
+}
 
+mat-sidenav {
+  margin: 16px;
+  width: 200px;
+  border-right: none;
+  background: #002b5c;
+  color: white;
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+}
 
-  
-  mat-sidenav-container {
-    height: calc(100vh - 65px);
-    width: 100%;
-  }
-  
-  .menu-button {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    font-size: 1rem;
-  }
-    mat-icon {
-      margin-right: 8px;
-    }
-  
-  
-  .avatar {
-    margin-top: 16px;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-  }
-  
-  .name {
-    margin: 0;
-    margin-top: 8px;
-    font-weight: normal;
-  }
-  
-  .designation {
-    margin-top: 2px;
-    font-size: 0.7rem;
-    color: lightgrey;
-  }
-  
-  mat-divider {
-    margin-top: 16px;
-    margin-bottom: 16px;
-    background-color: rgba(255, 255, 255, 0.5);
-  }
+.content {
+  height: calc(100vh - 130px);
+  border-radius: 10px;
+  margin: 16px;
+  margin-left: 32px;
+  padding: 16px;
+  overflow: auto;
+}
 
-  .snack-bar-success {
-    background-color: #4CAF50;
-    color: #fff;
-  }
+mat-sidenav-container {
+  height: calc(100vh - 65px);
+  width: 100%;
+}
+
+.menu-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1rem;
+}
+
+mat-icon {
+  margin-right: 8px;
+}
+
+.avatar {
+  margin-top: 16px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.name {
+  margin: 0;
+  margin-top: 8px;
+  font-weight: normal;
+}
+
+.designation {
+  margin-top: 2px;
+  font-size: 0.7rem;
+  color: lightgrey;
+}
+
+mat-divider {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.snack-bar-success {
+  background-color: #4caf50;
+  color: #fff;
+}
 
 #Analytics {
   width: 100%;
@@ -86,19 +84,20 @@ mat-toolbar {
   justify-content: space-around;
   display: flex;
 }
+
 #Analytics .card {
   width: 320px;
   margin-bottom: 50px;
   height: 200px;
   border-radius: 30px;
   background: #e0e0e0;
-  box-shadow: 15px 15px 30px #bebebe,
-             -15px -15px 30px #ffffff;
+  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
   align-items: center;
   justify-content: center;
   display: flex;
   flex-direction: column;
 }
+
 .container {
   margin-top: 20px;
   width: 100%;
@@ -108,53 +107,52 @@ mat-toolbar {
   justify-items: center;
 }
 
-#Analytics .card h1{
+#Analytics .card h1 {
   font-weight: 600;
   color: red;
   font-size: 40px;
   margin-bottom: 45px;
 }
 
-#Analytics .card p{
+#Analytics .card p {
   color: #b9b6b6;
   font-weight: 500;
   font-size: 15px;
 }
+
 @media (max-width: 768px) {
- .container {
+  .container {
     margin-top: 50px;
     gap: 10px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
-  
+
   #Analytics .card {
-  width: 80%;
-  height: 55%;
- margin-bottom: 3px;
+    width: 80%;
+    height: 55%;
+    margin-bottom: 3px;
   }
-  #Analytics .card p{
+
+  #Analytics .card p {
     color: #b9b6b6;
     font-weight: 500;
     font-size: 15px;
   }
- 
+
   #Analytics .container .card h1 {
     font-size: 22px;
   }
+
   #Analytics {
     height: 250%;
   }
 }
 
-
-
-
-/*--------------Overall----------*/
-
+/* Overall */
 @media (max-width: 768px) {
   .formContainer {
     width: 10vh;
-    height: 30%;   
+    height: 30%;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -164,13 +162,14 @@ mat-toolbar {
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  .formContainer form {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  } 
 
-  #Analytics .leftan{
+  .formContainer form {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  #Analytics .leftan {
     width: 100%;
     justify-content: center;
     display: flex;
@@ -178,27 +177,28 @@ mat-toolbar {
     margin-left: 5%;
   }
 
-#Analytics .leftan .card{
-   width: 95%;
-   height: 20vh;
+  #Analytics .leftan .card {
+    width: 95%;
+    height: 20vh;
+  }
 
-}
-#Analytics .rightan{
-  display :none;
-}
+  #Analytics .rightan {
+    display: none;
+  }
 
-table td {
-  padding-left:15px;
-  padding-right: 15px;
-}
+  table td {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
-#Analytics .leftan .card h1{
-  font-size: 23px;
-}
+  #Analytics .leftan .card h1 {
+    font-size: 23px;
+  }
 
-  #create mat-card{
+  #create mat-card {
     min-width: 100%;
   }
+
   .formContainer input {
     border: none;
     width: 30vh;
@@ -207,10 +207,12 @@ table td {
     padding-right: 5px;
     border-radius: 5px;
   }
-  .btn , .btn2 {
+
+  .btn,
+  .btn2 {
     font-size: 10px;
     font-weight: 700;
     padding: 8px 35px;
     margin-bottom: 90px;
-}
+  }
 }
